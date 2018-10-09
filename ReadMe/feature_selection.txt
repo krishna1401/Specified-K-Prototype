@@ -1,0 +1,24 @@
+feature_selection.r script performs feature selection procedure for both categorical and numerical attributes of the given data.
+
+Functions:
+1) variance
+    Objective <- Find average variance of the complete attribute, using multiple samples
+  	Input <- Data, Column Name
+  	Output <- Variance
+  	Approach <- Compute Variance for for different samples(approximately 1%) and the return the Average 				Variance for all, to get an appropriate assumption of complete attribute
+
+2) information_gain
+    Objective <- Find Entropy of the complete attribute
+  	Input <- Data, Column Name, Label
+  	Output <- Information gain
+  	Approach <- Find the Number of Levels within the given Categorical Attribute and then calculate the
+  				Parent and Combined Child Entropy. Child Entropy is calculated by dividing the given data set into levels defined in the attribute and then calculating Entropy for each. Finally, return the difference between both the calculated entropy i.e. Information Gain
+
+3) selection 
+    Objective <- Select Features from data on basis of defined Criteria
+  	Input <- Data & Label
+  	Output <- Data with only selected features and Label
+  	Approach <- It inputs the DataSet and performs the following tasks:
+  				        a) Determining Numeric and Categorical Attribute to perform feature selection functions on each seperately.
+                  b) Finding the list of Attributes with feature selection value greater than 0.
+                  c) Finally, extracing the selected attributes and returning the updated dataset.

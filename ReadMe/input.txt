@@ -1,0 +1,18 @@
+input.R script performs the task taking the data files (specified in readme.md) as input from the user and perform basic formating on all the necessary columns according to the requirements.
+
+Functions:
+1) update_column
+    Objective <- Remove detailed information of Detection Column and convert it into 0's and 1's
+  	Input <- Data, Column Name
+  	Output <- Updated Data
+  	Approach <- Create a new column with updated values i.e. 0 and 1, then replace the original column with the newly created column
+
+2) input_data
+    Objective <- Read the txt tab seperated file and update the columns as per the specifications
+  	Input <- NULL
+  	Output <- Complete Dataset
+  	Approach <- Select a txt file from he computer and perform the following actions:
+  				        a) Update the Column Name as per detailed Description
+  				        b) Remove the Reluctant Columns i.e. columns with IP Address and Time
+  				        c) Factorize the levels for some Categorical Attributes i.e. convert Multi-Level factors to only 2 levels(0,1)
+

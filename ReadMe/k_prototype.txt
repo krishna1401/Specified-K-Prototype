@@ -1,0 +1,35 @@
+k_prototype.R script performs the Specified K-Prototype Clustering Algorithm.
+
+Functions:
+1) getDistance
+	Objective <- Calculate the Similarity Distance for both Numerical & Categorical attributes.
+	Input <- Complete Cluster, Center Point and Point(to get distance from).
+	Output <- Combine Numerical & Categorical Distance
+	Approach <- It calculates the Distance between the Centroid and the Point using two techniques:
+				  a) For Numerical Attributes: Euclidean Distance
+				  b) For Categorical Attributes: Chi-Square Distance
+
+2) computeCentroid
+	Objective <- Calculate the Centroid for the given Cluster Set
+  	Input <- Cluster Set & Class Label
+  	Output <- Centroid
+  	Approach <- Centroid is calculated by finding:
+  				  a)Mean for Numerical Attributes
+  				  b)Mode for Categorical Attributes	
+
+3) clusterConfidence
+	Objective <- Return the Class Label with Highest Confidence
+	Input <- Cluster & Class Label
+	Output <- Single Valued Class Label
+	Approach <- Finds the frequency of each Class Label within the created Cluster and return the class label 			  with maximum frequency
+
+4) k_cluster
+	Objective <- Create a Clustering Model using K-Prototype Clustering Techinque
+	Input <- Refined trainSet, Maximum no of Iterations, Weight for Distance
+	Output <- Details of 2 defined Clusters
+	Approach <- k-prototype algorithm performs the following tasks:
+				  a) Selects 2 random points within the data as Centroids of 2 clusters
+				  b) Defines the Cluster on the basis of above selected Centroids
+				  c) ReCompute the Centroids for the newly created Clusters
+				  d) Repeat task b) & c) for the specified number of iterations
+				  e) Finally, append the Cluster Label (clusterConfidence) to each of the Centroid and return the details of the Clusters

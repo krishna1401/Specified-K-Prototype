@@ -1,0 +1,8 @@
+main.R script is the main frame controller for the complete Specified K-Prototype Clustering Algorithm.
+
+It performs the following task:
+a) Read the data using the input.R source file
+b) Performs feature selection using feature_selection.R source file
+c) Distributes the data into Training & Test Sets
+d) Creates model with help of Training Set using k_prototype.R source file
+e) Predict the Class Label for Test Set and get performance measure for the algorithm
