@@ -12,7 +12,7 @@ Functions:
   	Input <- NULL
   	Output <- Complete Dataset
   	Approach <- Select a txt file from he computer and perform the following actions:
-  				        a) Update the Column Name as per detailed Description
-  				        b) Remove the Reluctant Columns i.e. columns with IP Address and Time
-  				        c) Factorize the levels for some Categorical Attributes i.e. convert Multi-Level factors to only 2 levels(0,1)
+  				a) Update the Column Name as per detailed Description
+  				b) Remove the Reluctant Columns i.e. columns with IP Address and Time
+  			    c) Factorize the levels for some Categorical Attributes i.e. convert Multi-Level factors to only 2 levels(0,1)
 
