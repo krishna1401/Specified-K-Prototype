@@ -6,20 +6,20 @@ Functions
 	Input <- Model, Test Set, Label
 	Output <- List of all Predicted Labels
 	Approach <- Predicts the class label for complete test data in following steps:
-				  a) Extracts the Class Labels and Centroids from the given Model
-				  b) Finds the distance of a point from all Centroids and assign Class Label of closest centroid
-				  c) Repeat task b) for all points and return the list for all prediction
+		    a) Extracts the Class Labels and Centroids from the given Model
+		    b) Finds the distance of a point from all Centroids and assign Class Label of closest centroid
+		    c) Repeat task b) for all points and return the list for all prediction
 
 2) confusionMatrix
     Objective <- Create a Confusion Matrix with the given predicted and original class labels
   	Input <- Predicted Labels & Original Labels
   	Output <- List contaning the following information:
-  				a) Confustion Matrix
-  				b) Accuracy
-  				c) Error Rate
-  				d) True Positive Rate
-  				e) False Positive Rate
-  				f) Precision 
+  		  a) Confustion Matrix
+  		  b) Accuracy
+  		  c) Error Rate
+  		  d) True Positive Rate
+  		  e) False Positive Rate
+  		  f) Precision 
   	Approach <- Finds all the information listed above in following steps:
-  				  a) Creates a Confusion Matrix with help of predicted and original Class Labels
-  				  b) Find other Performance measure with help of Confusion Matrix
+  		  a) Creates a Confusion Matrix with help of predicted and original Class Labels
+  		  b) Find other Performance measure with help of Confusion Matrix
