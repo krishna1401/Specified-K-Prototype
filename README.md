@@ -14,8 +14,8 @@ Dissimilarity measure for each object with the cluster prototype is calculating 
 ```
 E = E(n) + E(c)
 ```
-E(n) is the sum of distance measure for **numerical attributes** calculated using **Euclidean Distance**
-E(c) is the sum of distance measure for **categorical attributes** calculated using **Information Gain**
+- E(n) is the sum of distance measure for **numerical attributes** calculated using **Euclidean Distance**
+- E(c) is the sum of distance measure for **categorical attributes** calculated using **Information Gain**
 
 ## Implementation of Algorithm
 Here are the 4 steps for implementing the complete K-Prototype Algorithm:
